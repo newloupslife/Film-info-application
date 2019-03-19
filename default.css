@@ -1,0 +1,101 @@
+
+body {
+text-align:  justify;
+font-family: Arial, Helvetica, sans-serif;
+font-size:   11px;
+}
+
+
+.wrapper
+{
+width:  1200px;
+margin: 0 auto;
+}
+
+.header
+ {
+height:     190px;
+background: #000000;
+}
+
+
+.header li 
+{
+display: inline;
+}
+
+li  a {
+padding:         0px 20px 0px 20px;
+text-decoration: none;
+text-transform:  uppercase;
+font-weight:     bold;
+color:           #FFFFFF;
+}
+
+li a:hover, li .active a {
+background: #898888;
+color:      #FFFFFF;
+}
+
+
+
+.row:after
+ {
+content: "";
+display: block;
+clear:   both;
+}
+
+.col 
+{
+float:      left;
+box-sizing: border-box;
+}
+
+.left_content,.right_content 
+{
+width: 20%;
+}
+
+.main_content
+{
+width: 60%;
+}
+
+.main_content div
+{
+border:     1px solid white; 
+box-sizing: border-box;
+min-height: 50px;
+}
+/*------------------------------------------------
+--------------------Film_list------------------
+------------------------------------------------*/
+.film_list_caption
+{
+font-weight:bold;
+}
+
+.film_list_row:hover{
+  
+border: 2px solid #F1F1F2; 	
+}
+
+.film_name
+{
+width: 5%;
+}
+.film_year
+{
+ width: 5%;
+}
+.film_format
+{
+ width: 5%;
+}
+
+.film_actors
+{
+ width: 28%;
+}
+
