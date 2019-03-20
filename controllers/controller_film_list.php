@@ -1,5 +1,5 @@
 <?php
-	require_once('models/model_film_list.php');
+	require_once('services/service_film_list.php');
 
     $iterator = $posts->getItterator();
 

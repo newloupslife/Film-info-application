@@ -13,6 +13,9 @@ function routing($page){
         case 'action_add_film':
             $controller='controller_action_add_film.php';
             break;
+        case 'delete_film':
+            $controller='controller_delete_film.php';
+            break;
 
 		default:
 			//$controller='controller_tovar_list.php';

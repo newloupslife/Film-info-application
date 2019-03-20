@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	require_once('routing.php');
+	require_once('routes/routing.php');
 
 	function loadPage(){
 		$page=getPage();
