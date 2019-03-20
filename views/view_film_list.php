@@ -1,5 +1,3 @@
-<a href='film'>All</a>
-
 
 <div class='film_list_caption row'>
     <div class='film_name col'>
@@ -16,21 +14,27 @@
     </div>
 </div>
 
+<?php
 
+foreach ($iterator as $s){ ?>
 	<div class='film_list_row row'>
 		<div class='film_name col'>
-            FF
+            <?= $s->getName(); ?>
 		</div>
 		<div class='film_year col'>
-            9999
+            <?= $s->getYear(); ?>
 		</div>
 		<div class='film_format col'>
-            VHS
+            <?= $s->getFormat(); ?>
 		</div>
 		<div class='film_actors col'>
-            Van Dasd
+            <?= $s->getActors(); ?>
 		</div>
 	</div>
+
+<? } ?>
+
+
 
 
 
