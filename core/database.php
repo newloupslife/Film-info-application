@@ -1,19 +1,19 @@
 <?php
 
 
-class db
+final class db
 {
 
-    # The PDO object
+
     private $pdo;
 
-    # The PDO statement object
+
     private $sQuery;
 
-    # Connected to database
+
     private $bConnected = false;
 
-    # Parametrs of the SQL query
+
     private $parametrs;
 
 

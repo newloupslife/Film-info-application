@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-	<title>Phone</title>
+	<title>Film store</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link href="default.css" rel="stylesheet" type="text/css" />
@@ -20,7 +20,6 @@
             LEFT CONTENT
 		</div>
 		<div class='main_content col'>
-            MID CONTENT
 			<?php
 			include 'controllers/'.$controller;
 			?>

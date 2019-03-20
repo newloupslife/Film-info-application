@@ -16,7 +16,3 @@ foreach ($posts_array as $arr)
     $posts->addPost($film);
 }
 
-$iterator = $posts->getItterator();
-
-?>
-

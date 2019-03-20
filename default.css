@@ -83,19 +83,23 @@ border: 2px solid #F1F1F2;
 
 .film_name
 {
-width: 5%;
+width: 10%;
 }
 .film_year
 {
- width: 5%;
+ width: 10%;
 }
 .film_format
 {
- width: 5%;
+ width: 10%;
 }
 
 .film_actors
 {
  width: 28%;
+}
+.film_more
+{
+ width: 10%;
 }
 

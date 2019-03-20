@@ -31,22 +31,12 @@ final class post
     }
 
 
-    public function setName(string $name)
-    {
-        $this->name = $name;
-    }
-
 
     public function getYear()
     {
         return $this->year;
     }
 
-
-    public function setYear(int $year)
-    {
-        $this->year = $year;
-    }
 
 
     public function getFormat()
@@ -55,20 +45,11 @@ final class post
     }
 
 
-    public function setFormat(string $format)
-    {
-        $this->format = $format;
-    }
-
     public function getActors()
     {
         return $this->actors;
     }
 
-    public function setActors(string $actors)
-    {
-        $this->actors = $actors;
-    }
 
 
 

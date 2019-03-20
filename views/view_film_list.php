@@ -1,4 +1,6 @@
 
+<a href="add_film">Add film</a> <br><br><br>
+
 <div class='film_list_caption row'>
     <div class='film_name col'>
         Name
@@ -12,7 +14,11 @@
     <div class='film_actors col'>
         Actors
     </div>
+    <div class='film_more col'>
+
+    </div>
 </div>
+
 
 <?php
 
@@ -30,6 +36,10 @@ foreach ($iterator as $s){ ?>
 		<div class='film_actors col'>
             <?= $s->getActors(); ?>
 		</div>
+        <div class='film_more col'>
+            <a href='about_film?id=<?= $s->getId(); ?>'>About</a> <br>
+            <a href='delete_film?id=<?= $s->getId(); ?>'>Delete</a>
+        </div>
 	</div>
 
 <? } ?>
