@@ -3,19 +3,10 @@
 
 final class db
 {
-
-
     private $pdo;
-
-
     private $sQuery;
-
-
     private $bConnected = false;
-
-
     private $parametrs;
-
 
     public function __construct($hostname = "127.0.0.1", $database = "film_information", $username = "root", $password = "")
     {
@@ -112,6 +103,11 @@ final class db
         else {
             return NULL;
         }
+    }
+
+    public function lastInsertId()
+    {
+        return $this->pdo->lastInsertId();
     }
 }
 

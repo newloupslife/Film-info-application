@@ -19,9 +19,7 @@
     </div>
 </div>
 
-
 <?php
-
 foreach ($iterator as $s){ ?>
 	<div class='film_list_row row'>
 		<div class='film_name col'>
@@ -41,7 +39,6 @@ foreach ($iterator as $s){ ?>
             <a href='delete_film?id=<?= $s->getId(); ?>'>Delete</a>
         </div>
 	</div>
-
 <? } ?>
 
 

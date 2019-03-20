@@ -5,7 +5,6 @@ final class PostCollection
 {
     private $posts;
 
-
     public function __construct(...$post)
     {
         $this->posts = $post;
@@ -20,6 +19,4 @@ final class PostCollection
     {
         return new ArrayIterator($this->posts);
     }
-
-
 }

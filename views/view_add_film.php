@@ -1,6 +1,4 @@
 
-
-
 <form action='action_add_film' method='post'
       enctype="multipart/form-data">
     Film name:
@@ -15,9 +13,7 @@
     </select><br>
     Stars
     <textarea name='stars'></textarea><br>
+    About film
+    <textarea name='about'></textarea><br>
     <input type='submit' value='Add'>
-
-
-
-
 </form>

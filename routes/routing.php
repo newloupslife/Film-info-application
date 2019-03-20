@@ -1,6 +1,5 @@
 <?php
 
-
 function routing($page){
 
 	switch($page){
@@ -15,6 +14,9 @@ function routing($page){
             break;
         case 'delete_film':
             $controller='controller_delete_film.php';
+            break;
+        case 'about_film':
+            $controller='controller_about_film.php';
             break;
 
 		default:
