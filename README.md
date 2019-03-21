@@ -32,7 +32,9 @@ Download and install: https://www.apachefriends.org/ru/download.html
 Usage
 =====================
   1. Pull project to your rep
-  2. Need to change permissions on the folder where the project be located
+  2. Need to change permissions on the folder where the project be located 
+    (i used xampp so my project must be at /opt/lampp/htdocs path.
+     But i created link on it and it was at PhpstormProjects dir.)
   
       $ sudo chmod 777 -R /opt/lampp/htdocs
       
