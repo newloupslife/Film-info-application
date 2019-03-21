@@ -1,6 +1,6 @@
 <?php
 
-require_once ("core/database.php");
+require_once("database/database.php");
 
 try {
     $db = new db();

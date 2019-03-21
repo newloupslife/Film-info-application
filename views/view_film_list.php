@@ -2,7 +2,7 @@
 <a href="add_film">Add film</a> <br><br><br>
 
 <div class='film_list_caption row'>
-    <div class='film_name col'>
+    <div class='film_name col' >
         Name
     </div>
     <div class='film_year col'>
@@ -22,7 +22,7 @@
 <?php
 foreach ($iterator as $s){ ?>
 	<div class='film_list_row row'>
-		<div class='film_name col'>
+		<div class='film_name col' >
             <?= $s->getName(); ?>
 		</div>
 		<div class='film_year col'>

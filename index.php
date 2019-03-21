@@ -1,5 +1,5 @@
 <?php
-    require('core/core.php');
+    require('routes/core.php');
     loadPage();
 ?>
 

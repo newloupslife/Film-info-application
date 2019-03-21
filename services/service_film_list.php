@@ -1,6 +1,6 @@
 <?php
 
-require_once("/opt/lampp/htdocs/FilmInformation/core/database.php");
+require_once("/opt/lampp/htdocs/FilmInformation/database/database.php");
 require_once("/opt/lampp/htdocs/FilmInformation/Post/PostCollection.php");
 require_once("/opt/lampp/htdocs/FilmInformation/Entity/Post.php");
 

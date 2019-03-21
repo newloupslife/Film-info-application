@@ -17,7 +17,9 @@
 
 	<div class='row'>	
 		<div class='left_content col'>
-            LEFT CONTENT
+            <?php
+            include 'controllers/'.$left_controller;
+            ?>
 		</div>
 		<div class='main_content col'>
 			<?php
@@ -25,7 +27,7 @@
 			?>
 		</div>
 		<div class='right_content col'>
-			RIGHT CONTENT
+
 		</div>
 	</div>
 	<div class='footer row'>

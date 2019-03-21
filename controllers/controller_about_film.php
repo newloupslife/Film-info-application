@@ -1,5 +1,5 @@
 <?php
-require_once("/opt/lampp/htdocs/FilmInformation/core/database.php");
+require_once("/opt/lampp/htdocs/FilmInformation/database/database.php");
 
 $film_id = $_GET["id"];
 
