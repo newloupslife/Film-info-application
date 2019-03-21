@@ -6,6 +6,6 @@ How do you want to find film: by name or star?:
     <option value="by_star">Star</option>
 </select><br>
 
-<input type="text" name="filter_text" ><br>
-<input type="submit" value="Find">
+<input type="text" name="filter_text" required ><br>
+<input type="submit" value="Search">
 </form>
