@@ -2,6 +2,8 @@
 
 function routing($page){
 
+    $left_controller='controller_filtering.php';
+
 	switch($page){
 		case 'film':
 			$controller='controller_film_list.php';
@@ -18,6 +20,7 @@ function routing($page){
         case 'about_film':
             $controller='controller_about_film.php';
             break;
+
 
 		default:
 			//$controller='controller_tovar_list.php';

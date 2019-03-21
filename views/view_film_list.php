@@ -1,6 +1,10 @@
 
 <a href="add_film">Add film</a> <br><br><br>
 
+<a href="film?filter=asc">Show all films with sorting</a> <br><br><br>
+<a href="film?filter=none">Show all films without sorting</a> <br><br><br>
+
+
 <div class='film_list_caption row'>
     <div class='film_name col' >
         Name

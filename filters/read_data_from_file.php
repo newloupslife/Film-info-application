@@ -1,7 +1,7 @@
 <?php
 
 
-final class readDataFromFile
+final class readDatafromfile
 {
     private $info;
     private $new_info=[];
