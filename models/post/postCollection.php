@@ -1,7 +1,7 @@
 <?php
 
 
-final class PostCollection
+final class postCollection
 {
     private $posts;
 
