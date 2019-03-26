@@ -24,7 +24,7 @@
 </div>
 
 <?php
-foreach ($iterator as $s){ ?>
+foreach ($iterator as $s) { ?>
 	<div class='film_list_row row'>
 		<div class='film_name col' >
             <?= $s->getName(); ?>

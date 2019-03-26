@@ -18,8 +18,7 @@ final class db
     private function Connect($hostname, $database, $username, $password)
     {
         $dsn = 'mysql:host='. $database.';host='.$hostname;
-        try
-        {
+        try {
             $this->pdo = new PDO($dsn,$username,$password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
@@ -27,9 +26,7 @@ final class db
             $this->pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES,true);
 
             $this->bConnected = true;
-        }
-        catch (PDOException $e)
-        {
+        } catch (PDOException $e) {
             echo $e->getMessage();
             die();
         }
@@ -43,15 +40,14 @@ final class db
 
     private function Init($query,$parameters="")
     {
-        if(!$this->bConnected) { $this->Connect();}
+        if (!$this->bConnected) { $this->Connect();}
 
-        try
-        {
+        try {
             $this->sQuery = $this->pdo->prepare($query);
 
             $this->bindMore($parameters);
 
-            if(!empty($this->parametrs)){
+            if (!empty($this->parametrs)) {
                 foreach($this->parametrs as $param)
                 {
                     $parameters = explode("\x7F",$param);
@@ -60,9 +56,7 @@ final class db
             }
 
             $this->success = $this->sQuery->execute();
-        }
-        catch(PDOException $e)
-        {
+        } catch (PDOException $e) {
             echo $e->getMessage()."<br>$query";
         }
 
@@ -76,7 +70,7 @@ final class db
 
     public function bindMore($parray)
     {
-        if(empty($this->parametrs) && is_array($parray)){
+        if (empty($this->parametrs) && is_array($parray)) {
             $columns = array_keys($parray);
             foreach($columns as $i => $column)
                 $this->bind($column,$parray[$column]);
@@ -94,13 +88,11 @@ final class db
 
         $statement = strtolower($rawStatement[0]);
 
-        if($statement === 'select' || $statement === 'show'){
+        if ($statement === 'select' || $statement === 'show') {
             return $this->sQuery->fetchAll($fetchmode);
-        }
-        elseif ($statement === 'insert' || $statement === 'update' || $statement === 'delete'){
+        } elseif ($statement === 'insert' || $statement === 'update' || $statement === 'delete') {
             return $this->sQuery->rowCount();
-        }
-        else {
+        } else {
             return NULL;
         }
     }

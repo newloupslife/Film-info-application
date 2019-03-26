@@ -7,7 +7,7 @@
 
     <table border="1">
         <tr>
-            <td>Film name: <input type="text" name="username" ></td>
+            <td>Film name: <input type="text" name="username"></td>
             <td>Year:    <input type="text" name="year"></td>
         </tr>
         <tr>
@@ -35,6 +35,8 @@
         </tr>
 
     </table>
-</form>
+</form> <br><br><br>
+
+<a href="film">Back</a>
 
 

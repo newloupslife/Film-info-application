@@ -15,14 +15,13 @@ final class filtered_query
 
     private function where($by,$text)
     {
-        if($by == ''){
+        if ($by == '') {
             return;
         }
 
-        if($by == 'by_title'){
+        if ($by == 'by_title') {
             $where = " WHERE name LIKE '%$text%'";
-        }
-        else
+        } else
             $where =" WHERE stars LIKE '%$text%'";
 
         $this->sql .= $where;
@@ -35,7 +34,7 @@ final class filtered_query
 
     private function order($asc)
     {
-        if($asc == "asc"){
+        if ($asc == "asc") {
             $this->sql .= " ORDER BY name";
         }
     }

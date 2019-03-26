@@ -39,24 +39,24 @@ final class readDatafromfile
     private function findYear($film)
     {
         preg_match('/Year:([^"]*)Format/', $film, $year);
-        return $year[1];
+        return ltrim(rtrim($year[1]));
     }
 
     private function findFormat($film)
     {
         preg_match('/Format:([^"]*)Stars/', $film, $format);
-        return $format[1];
+        return ltrim(rtrim($format[1]));
     }
 
     private function findStars($film)
     {
         preg_match('/Stars:([^"]*)About/', $film, $stars);
-        return $stars[1];
+        return ltrim(rtrim($stars[1]));
     }
 
     private function findAbout($film)
     {
         preg_match('/About:([^"]*)/', $film, $about);
-        return $about[1];
+        return ltrim(rtrim($about[1]));
     }
 }

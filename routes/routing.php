@@ -1,10 +1,11 @@
 <?php
 
-function routing($page){
+function routing($page)
+{
 
     $left_controller='controller_filtering.php';
 
-	switch($page){
+	switch ($page) {
 		case 'film':
 			$controller='controller_film_list.php';
 			break;
@@ -25,6 +26,7 @@ function routing($page){
 		default:
 			//$controller='controller_tovar_list.php';
 	}
+
 	if (!strpos($page,'action'))
 		require_once('views/template_view.php');
 	else

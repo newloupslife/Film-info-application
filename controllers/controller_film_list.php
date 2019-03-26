@@ -1,16 +1,14 @@
 <?php
 
 
-if(isset($_GET['filter'])){
+if (isset($_GET['filter'])) {
     $asc = $_GET['filter'];
-}
-else $asc = 'none';
+} else $asc = 'none';
 
-if(isset($_GET['filter_style'])){
+if (isset($_GET['filter_style'])) {
     $by = $_GET['filter_style'];
     $text = $_GET['filter_text'];
-}
-else {
+} else {
     $by = '';
     $text = '';
 }

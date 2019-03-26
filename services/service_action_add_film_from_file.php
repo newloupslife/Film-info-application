@@ -1,8 +1,15 @@
 <?php
 
 try {
+
     $db = new db();
-    foreach ($films as $film){
+    foreach ($films as $film) {
+
+        validation::titleValid($film['title']);
+        validation::yearValid($film['year']);
+        validation::formatValid($film['format']);
+        validation::starsValid($film['stars']);
+
         $db->query(
             "INSERT INTO film_information.films(name,year,format,stars)
             VALUES(:n,:year,:f,:stars)", array("n" => $film['title'],
@@ -18,7 +25,11 @@ try {
     }
 
     $db->CloseConnection();
-}
-catch (PDOException $e){
+
+    header('Location:film');
+
+} catch (Exception $e) {
+    $db->CloseConnection();
     echo $e->getMessage();
+    echo "<br><a href='add_film'>back</a>";
 }
