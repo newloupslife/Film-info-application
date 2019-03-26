@@ -27,7 +27,7 @@
 foreach ($iterator as $s) { ?>
 	<div class='film_list_row row'>
 		<div class='film_name col' >
-            <?= $s->getName(); ?>
+            <?= json_decode($s->getName()); ?>
 		</div>
 		<div class='film_year col'>
             <?= $s->getYear(); ?>
@@ -36,7 +36,7 @@ foreach ($iterator as $s) { ?>
             <?= $s->getFormat(); ?>
 		</div>
 		<div class='film_stars col'>
-            <?= $s->getStars(); ?>
+            <?= json_decode($s->getStars()); ?>
 		</div>
         <div class='film_more col'>
             <a href='about_film?id=<?= $s->getId(); ?>'>About</a> <br>

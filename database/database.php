@@ -15,11 +15,12 @@ final class db
     }
 
 
+
     private function Connect($hostname, $database, $username, $password)
     {
-        $dsn = 'mysql:host='. $database.';host='.$hostname;
+        $dsn = 'mysql:host='. $database.';host='.$hostname.';charset=utf8';
         try {
-            $this->pdo = new PDO($dsn,$username,$password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+            $this->pdo = new PDO($dsn,$username,$password);
 
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
