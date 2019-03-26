@@ -33,7 +33,7 @@ final class readDatafromfile
     private function findTitle($film)
     {
         preg_match('/Title:([^"]*)Release/', $film, $title);
-        return $title[1];
+        return ltrim(rtrim($title[1]));
     }
 
     private function findYear($film)
