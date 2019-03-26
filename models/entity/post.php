@@ -6,16 +6,16 @@ final class post
     private $name;
     private $year;
     private $format;
-    private $actors;
+    private $stars;
     private $about;
 
-    public function __construct(int $id, string $name, int $year, string $format = '', string $actors = '', string $about='')
+    public function __construct(int $id, string $name, int $year, string $format = '', string $stars = '', string $about='')
     {
         $this->id = $id;
         $this->name = $name;
         $this->year = $year;
         $this->format = $format;
-        $this->actors = $actors;
+        $this->stars = $stars;
     }
 
     public function getId()
@@ -38,9 +38,9 @@ final class post
         return $this->format;
     }
 
-    public function getActors()
+    public function getStars()
     {
-        return $this->actors;
+        return $this->stars;
     }
 
     public function getAbout()

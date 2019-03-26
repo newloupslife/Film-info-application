@@ -19,6 +19,7 @@ else {
             'stars' => $_POST['stars'],
             'about' =>$_POST['about']
     ];
+
     require_once("services/service_action_add_film.php");
 }
 

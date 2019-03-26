@@ -9,6 +9,7 @@ final class filtered_query
         $this->table($table);
         $this->where($by,$text);
         $this->order($asc);
+        $this->sql .= ';';
         return $this->sql;
     }
 
@@ -19,10 +20,10 @@ final class filtered_query
         }
 
         if($by == 'by_title'){
-            $where = " WHERE name LIKE '%$text%';";
+            $where = " WHERE name LIKE '%$text%'";
         }
         else
-            $where =" WHERE actors LIKE '%$text%';";
+            $where =" WHERE stars LIKE '%$text%'";
 
         $this->sql .= $where;
     }
@@ -35,7 +36,7 @@ final class filtered_query
     private function order($asc)
     {
         if($asc == "asc"){
-            $this->sql .= " ORDER BY name;";
+            $this->sql .= " ORDER BY name";
         }
     }
 }

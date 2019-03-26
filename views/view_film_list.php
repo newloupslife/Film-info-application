@@ -15,8 +15,8 @@
     <div class='film_format col'>
         Format
     </div>
-    <div class='film_actors col'>
-        Actors
+    <div class='film_stars col'>
+        Stars
     </div>
     <div class='film_more col'>
 
@@ -35,8 +35,8 @@ foreach ($iterator as $s){ ?>
 		<div class='film_format col'>
             <?= $s->getFormat(); ?>
 		</div>
-		<div class='film_actors col'>
-            <?= $s->getActors(); ?>
+		<div class='film_stars col'>
+            <?= $s->getStars(); ?>
 		</div>
         <div class='film_more col'>
             <a href='about_film?id=<?= $s->getId(); ?>'>About</a> <br>

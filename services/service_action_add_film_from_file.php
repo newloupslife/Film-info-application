@@ -4,11 +4,11 @@ try {
     $db = new db();
     foreach ($films as $film){
         $db->query(
-            "INSERT INTO film_information.films(name,year,format,actors)
-            VALUES(:n,:year,:f,:actors)", array("n" => $film['title'],
+            "INSERT INTO film_information.films(name,year,format,stars)
+            VALUES(:n,:year,:f,:stars)", array("n" => $film['title'],
                 "year" => $film['year'],
                 "f" => $film['format'],
-                "actors" => $film['stars'])
+                "stars" => $film['stars'])
         );
 
         $last_id = $db->lastInsertId();

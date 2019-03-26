@@ -9,7 +9,6 @@ $posts = new postCollection();
 
 $filtered_sql = new filtered_query();
 $sql = $filtered_sql->sql("film_information.films",$asc, $by, $text);
-
 try {
     $db = new db();
     $posts_array = $db->query($sql);
@@ -22,7 +21,8 @@ catch (PDOException $e){
 foreach ($posts_array as $arr)
 {
     extract($arr);
-    $film = new Post($id,$name,$year,$format,$actors);
+    $film = new Post($id,$name,$year,$format,$stars);
     $posts->addPost($film);
 
 }
+
